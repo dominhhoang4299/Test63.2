@@ -57,8 +57,6 @@ app.get('/api/products', async (req, res) => {
     res.send(products);
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
-
-const port = 3000;
 const secretKey = 'mySecretKey';
 
 app.use(bodyParser.json());
